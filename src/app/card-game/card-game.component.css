@@ -1,0 +1,52 @@
+.card-game {
+  text-align: center;
+  padding: 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.toolbar {
+  font-size: 24px;
+}
+
+.carousel {
+  margin-top: 10px;
+}
+
+.start-button {
+  margin: 20px 0;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  width: 150px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.guess-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+  .guess-buttons button {
+    margin: 10px;
+    padding: 15px;
+    font-size: 18px;
+  }

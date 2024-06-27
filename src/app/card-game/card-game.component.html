@@ -1,0 +1,27 @@
+<div class="card-game">
+  <mat-toolbar color="primary" class="toolbar">
+    <h1>Készítette: Hadobás Milán</h1>
+  </mat-toolbar>
+
+  <h1>Alatta/Felette</h1>
+
+
+
+  <div *ngIf="gameStarted">
+    <div *ngIf="firstCard !== null">
+      <img [src]="getCardImage(firstCard)" alt="Első Kártya">
+    </div>
+    <div *ngIf="secondCard !== null">
+      <img [src]="getCardImage(secondCard)" alt="Második Kártya">
+    </div>
+    <div>
+      <button mat-raised-button color="primary" (click)="guessHigher()">Magasabb</button>
+      <button mat-raised-button color="primary" (click)="guessLower()">Alacsonyabb</button>
+    </div>
+  </div>
+  <div *ngIf="!gameStarted">
+    <button mat-raised-button color="primary" (click)="startGame()" *ngIf="!firstCard" class="start-button">
+      Játék Kezdése
+    </button>
+  </div>
+</div>
